@@ -11,6 +11,8 @@ import java.io.FileInputStream;
 import java.io.IOException;
 
 import java.time.Duration;
+
+import java.util.Properties;
  
 import org.apache.poi.EncryptedDocumentException;
 
@@ -38,8 +40,8 @@ import org.testng.annotations.AfterMethod;
 
 import org.testng.annotations.DataProvider;
  
-public class TC9_TestNG3 {
-
+public class TC9_TestNG4_properties {
+	
 	WebDriver driver;
 
 	String projectpath;
@@ -51,6 +53,12 @@ public class TC9_TestNG3 {
 
 	  Login_PageFactory obj=PageFactory.initElements(driver, Login_PageFactory.class);
 
+	/*  driver.findElement(By.name("username")).sendKeys(username);
+
+	  driver.findElement(By.name("password")).sendKeys(password);
+
+		driver.findElement(By.xpath("//button[@type='submit']")).click(); */
+
 	  obj.enterusername(username);
 
 	  obj.enterpassword(password);
@@ -61,7 +69,15 @@ public class TC9_TestNG3 {
 
   @BeforeMethod
 
-  public void beforeMethod() {
+  public void beforeMethod() throws IOException {
+
+	  Properties prob=new Properties();
+
+	  FileInputStream fis=new FileInputStream("C:\\Users\\ajeet.4.singh\\OneDrive - Coforge Limited\\Desktop\\Automation_Selenium\\Confiuration\\data.properties");
+
+	  prob.load(fis);
+
+	  String url=prob.getProperty("url");
 
 	  WebDriverManager.edgedriver().setup();
 
@@ -69,7 +85,7 @@ public class TC9_TestNG3 {
 
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 
-		driver.get("https://opensource-demo.orangehrmlive.com/");
+		driver.get(url);
 
   }
  
@@ -88,14 +104,18 @@ public class TC9_TestNG3 {
 
 	  FileInputStream file=new FileInputStream("C:\\Users\\ajeet.4.singh\\OneDrive - Coforge Limited\\Desktop\\Automation_Selenium\\TestData.xlsx");
 
-	XSSFWorkbook workbook=new XSSFWorkbook(file);
+		XSSFWorkbook workbook=new XSSFWorkbook(file);
 
-	XSSFSheet sheet=workbook.getSheet("Sheet1");
+		XSSFSheet sheet=workbook.getSheet("Sheet1");
 
 int rows=sheet.getPhysicalNumberOfRows();
-
+ 
 int columns=sheet.getRow(0).getPhysicalNumberOfCells();
  
+System.out.println("rows:"+rows);
+
+System.out.println("colums:"+columns);
+
 Object[][] data=new Object[rows-1][columns];
  
 for(int i=1;i<rows;i++)
