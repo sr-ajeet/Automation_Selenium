@@ -74,7 +74,7 @@ public class Lab_14 {
     @DataProvider
     public Object[][] dp() throws IOException {
 
-        FileInputStream file = new FileInputStream("C:\\Users\\ajeet.4.singh\\OneDrive - Coforge Limited\\Desktop\\Automation_Selenium\\UserDetails.xlsx");
+        FileInputStream file = new FileInputStream("C:\\Users\\ajeet.4.singh\\OneDrive - Coforge Limited\\Desktop\\Automation_Selenium\\src\\test\\resources\\UserDetails.xlsx");
         XSSFWorkbook workbook = new XSSFWorkbook(file);
         XSSFSheet sheet = workbook.getSheet("Sheet1");
         int rows = sheet.getPhysicalNumberOfRows();

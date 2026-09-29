@@ -86,7 +86,7 @@ public class TC9_TestNG3 {
 
   public Object[][] dp() throws EncryptedDocumentException, IOException {
 
-	  FileInputStream file=new FileInputStream("C:\\Users\\ajeet.4.singh\\OneDrive - Coforge Limited\\Desktop\\Automation_Selenium\\TestData.xlsx");
+	  FileInputStream file=new FileInputStream("C:\\Users\\ajeet.4.singh\\OneDrive - Coforge Limited\\Desktop\\Automation_Selenium\\src\\test\\resources\\TestData.xlsx");
 
 	XSSFWorkbook workbook=new XSSFWorkbook(file);
 

@@ -71,7 +71,7 @@ public class Lab_12 {
 
         prop = new Properties();
 
-        FileInputStream fis = new FileInputStream("C:\\Users\\ajeet.4.singh\\OneDrive - Coforge Limited\\Desktop\\Automation_Selenium\\Confiuration\\config.properties");
+        FileInputStream fis = new FileInputStream("C:\\Users\\ajeet.4.singh\\OneDrive - Coforge Limited\\Desktop\\Automation_Selenium\\src\\test\\resources\\Confiuration\\lab12.properties");
 
         prop.load(fis);
 

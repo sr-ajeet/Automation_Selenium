@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\ajeet.4.singh\AppData\Local\Temp\testng-eclipse-717305098\testng-customsuite.xml</span>
+                    <span>C:\Users\ajeet.4.singh\AppData\Local\Temp\testng-eclipse--521704921\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">2 methods,   2 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -103,7 +103,12 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="pac1.Lab_12" class="method navigator-link" hash-for-method="Test">Test</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="pac1.TC9_TestNG4_properties" class="method navigator-link" hash-for-method="loginTest(john, apple)">loginTest(john, apple)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="pac1.TC9_TestNG4_properties" class="method navigator-link" hash-for-method="loginTest(Batman, welcome)">loginTest(Batman, welcome)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -121,14 +126,23 @@
           <div class="suite-Default_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">pac1.Lab_12</span>
+              <span class="class-name">pac1.TC9_TestNG4_properties</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="Test">
-                  </a> <!-- Test -->
-                  <span class="method-name">Test</span>
+                  <a name="loginTest(john, apple)">
+                  </a> <!-- loginTest(john, apple) -->
+                  <span class="method-name">loginTest</span>
+                  <span class="parameters">(john,apple)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginTest(Batman, welcome)">
+                  </a> <!-- loginTest(Batman, welcome) -->
+                  <span class="method-name">loginTest</span>
+                  <span class="parameters">(Batman,welcome)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -136,7 +150,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\ajeet.4.singh\AppData\Local\Temp\testng-eclipse-717305098\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\ajeet.4.singh\AppData\Local\Temp\testng-eclipse--521704921\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -145,7 +159,7 @@
 &lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;pac1.Lab_12&quot;/&gt;
+      &lt;class name=&quot;pac1.TC9_TestNG4_properties&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -185,16 +199,20 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(2);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'Test')
-data.setCell(0, 2, 'pac1.Lab_12')
-data.setCell(0, 3, 6302);
+data.setCell(0, 1, 'loginTest')
+data.setCell(0, 2, 'pac1.TC9_TestNG4_properties')
+data.setCell(0, 3, 2944);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'loginTest')
+data.setCell(1, 2, 'pac1.TC9_TestNG4_properties')
+data.setCell(1, 3, 2316);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 6 seconds</span>
+              <span class="suite-total-time">Total running time: 5 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -220,18 +238,30 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">pac1.Lab_12</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">pac1.TC9_TestNG4_properties</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">Test</span>
-                <span class="method-start">7827 ms</span>
+                <span class="method-name">loginTest(Batman, welcome)</span>
+                <span class="method-start">36386 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">14134 ms</span>
+                <span class="method-start">39336 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">40101 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">loginTest(john, apple)</span>
+                <span class="method-start">56019 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">58341 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

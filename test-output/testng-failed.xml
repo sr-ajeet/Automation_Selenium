@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="pac1.Lab_12">
+      <class name="pac1.TC9_TestNG4_properties">
         <methods>
-          <include name="beforeMethod"/>
+          <include name="loginTest"/>
           <include name="afterMethod"/>
-          <include name="Test"/>
+          <include name="beforeMethod"/>
         </methods>
-      </class> <!-- pac1.Lab_12 -->
+      </class> <!-- pac1.TC9_TestNG4_properties -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
